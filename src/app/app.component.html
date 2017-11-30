@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>US Time Zone Display</h1>
+  <div class="row">
+    <div class="col-md-2">
+      <button (click)="retreiveDate('pst')" class="btn-success">PST</button>
+    </div>
+    <div class="col-md-2">
+      <button (click)="retreiveDate('mst')" class="btn-success">MST</button>
+    </div>
+    <div class="col-md-2">
+      <button (click)="retreiveDate('cst')" class="btn-success">CST</button>
+    </div>
+    <div class="col-md-2">
+      <button (click)="retreiveDate('est')" class="btn-success">EST</button>
+    </div>
+    <div class="col-md-4">
+      <button (click)="clearDate()" class="btn-danger">CLEAR</button>
+    </div>
+  </div>
+  <h2>{{ convertedDate }}</h2>
+</div>
+
